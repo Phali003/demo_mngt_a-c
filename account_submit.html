@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your account for professional management by our expert team">
+    <title>Submit Your Account - AccountPro</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>AccountPro</h1></a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="account_submit.html" class="btn btn-outline">Submit Account</a></li>
+                    <li><a href="dashboard.html" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Form Header Section -->
+    <section class="form-header">
+        <div class="container">
+            <div class="section-header">
+                <h2>Submit Your Account</h2>
+                <p>Start your account management journey with our expert team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-step Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <!-- Form Progress Bar -->
+            <div class="form-progress">
+                <div class="progress-step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Account Details</div>
+                </div>
+                <div class="progress-bar"></div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Management Preferences</div>
+                </div>
+                <div class="progress-bar"></div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Task Specifications</div>
+                </div>
+            </div>
+
+            <!-- Form Container -->
+            <div class="form-container">
+                <form id="account-submission-form" novalidate>
+                    <!-- Step 1: Account Details -->
+                    <div class="form-step active" data-step="1">
+                        <h3>Account Details</h3>
+                        <p>Let us know about your account and its basic information</p>
+
+                        <div class="form-group">
+                            <label for="account-name" class="form-label">Account Name <span class="required">*</span></label>
+                            <input type="text" id="account-name" class="form-control" required>
+                            <div class="invalid-feedback">Please enter your account name</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account-type" class="form-label">Account Type <span class="required">*</span></label>
+                            <select id="account-type" class="form-select" required>
+                                <option value="" selected disabled>Select account type</option>
+                                <option value="personal">Personal</option>
+                                <option value="business">Business</option>
+                                <option value="brand">Brand</option>
+                                <option value="influencer">Influencer</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your account type</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="platform" class="form-label">Platform <span class="required">*</span></label>
+                            <select id="platform" class="form-select" required>
+                                <option value="" selected disabled>Select platform</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="tiktok">TikTok</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="pinterest">Pinterest</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your platform</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account-description" class="form-label">Account Description</label>
+                            <textarea id="account-description" class="form-control" rows="4" placeholder="Briefly describe your account, target audience, and goals"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account-url" class="form-label">Account URL <span class="required">*</span></label>
+                            <input type="url" id="account-url" class="form-control" placeholder="https://" required>
+                            <div class="invalid-feedback">Please enter a valid URL</div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary next-step">Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Management Preferences -->
+                    <div class="form-step" data-step="2">
+                        <h3>Management Preferences</h3>
+                        <p>Tell us how you'd like your account to be managed</p>
+
+                        <div class="form-group">
+                            <label class="form-label">Content Management <span class="required">*</span></label>
+                            <div class="form-check">
+                                <input type="checkbox" id="content-creation" class="form-check-input">
+                                <label for="content-creation" class="form-check-label">Content Creation</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="content-curation" class="form-check-input">
+                                <label for="content-curation" class="form-check-label">Content Curation</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="content-scheduling" class="form-check-input">
+                                <label for="content-scheduling" class="form-check-label">Content Scheduling</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="content-analytics" class="form-check-input">
+                                <label for="content-analytics" class="form-check-label">Content Performance Analysis</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Moderation Settings <span class="required">*</span></label>
+                            <div class="form-check">
+                                <input type="radio" name="moderation-level" id="moderation-light" class="form-check-input" value="light" required>
+                                <label for="moderation-light" class="form-check-label">Light Moderation (Basic spam/abuse filtering)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="moderation-level" id="moderation-standard" class="form-check-input" value="standard" required>
+                                <label for="moderation-standard" class="form-check-label">Standard Moderation (Regular monitoring and filtering)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="moderation-level" id="moderation-strict" class="form-check-input" value="strict" required>
+                                <label for="moderation-strict" class="form-check-label">Strict Moderation (Active monitoring with approval workflow)</label>
+                            </div>
+                            <div class="invalid-feedback">Please select a moderation level</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Engagement Preferences <span class="required">*</span></label>
+                            <div class="form-check">
+                                <input type="checkbox" id="respond-comments" class="form-check-input">
+                                <label for="respond-comments" class="form-check-label">Respond to Comments</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="respond-messages" class="form-check-input">
+                                <label for="respond-messages" class="form-check-label">Respond to Direct Messages</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="proactive-engagement" class="form-check-input">
+                                <label for="proactive-engagement" class="form-check-label">Proactive Engagement (Like, follow, comment on others)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="community-building" class="form-check-input">
+                                <label for="community-building" class="form-check-label">Community Building Activities</label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline prev-step">Previous Step</button>
+                            <button type="button" class="btn btn-primary next-step">Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Task Specifications -->
+                    <div class="form-step" data-step="3">
+                        <h3>Task Specifications</h3>
+                        <p>Specify the tasks you'd like our team to perform</p>
+
+                        <div class="form-group">
+                            <label for="posting-frequency" class="form-label">Content Posting Frequency <span class="required">*</span></label>
+                            <select id="posting-frequency" class="form-select" required>
+                                <option value="" selected disabled>Select frequency</option>
+                                <option value="daily">Daily</option>
+                                <option value="2-3-times-week">2-3 Times per Week</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="bi-weekly">Bi-Weekly</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="custom">Custom Schedule</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your preferred posting frequency</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reporting-frequency" class="form-label">Reporting Frequency <span class="required">*</span></label>
+                            <select id="reporting-frequency" class="form-select" required>
+                                <option value="" selected disabled>Select frequency</option>
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="bi-weekly">Bi-Weekly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your preferred reporting frequency</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="response-time" class="form-label">Expected Response Time for Engagement</label>
+                            <select id="response-time" class="form-select">
+                                <option value="" selected disabled>Select response time</option>
+                                <option value="1-hour">Within 1 hour</option>
+                                <option value="3-hours">Within 3 hours</option>
+                                <option value="6-hours">Within 6 hours</option>
+                                <option value="12-hours">Within 12 hours</option>
+                                <option value="24-hours">Within 24 hours</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-instructions" class="form-label">Special Instructions</label>
+                            <textarea id="special-instructions" class="form-control" rows="5" placeholder="Any specific guidelines, brand voice requirements, topics to avoid, or other special instructions"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="communication-preference" class="form-label">Preferred Communication Method <span class="required">*</span></label>
+                            <select id="communication-preference" class="form-select" required>
+                                <option value="" selected disabled>Select method</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="messaging-app">Messaging App</option>
+                                <option value="platform-dashboard">Platform Dashboard</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your preferred communication method</div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline prev-step">Previous Step</button>
+                            <button type="submit" class="btn btn-primary">Submit Account</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Security Notice -->
+    <section class="security-notice">
+        <div class="container">
+            <div class="notice-container">
+                <div class="notice-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="notice-content">
+                    <h3>Secure Submission</h3>
+                    <p>Your account information is protected by our advanced security measures. We use end-to-end encryption to ensure your data is safe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">AccountPro</div>
+                    <p>Professional account management services for businesses and individuals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Account Moderation</a>
+
